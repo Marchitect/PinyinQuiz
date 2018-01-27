@@ -5,20 +5,20 @@ export class QuizResultPresenter extends React.Component {
     const answer = this.props.answer;
     if (answer === "correct"){
       return (
-        <div className="correctResult">
+        <div id="correctResult" className="resultSec">
           <p>Hey you got it correct!</p>
         </div>
       );
     } 
     else if (answer === "wrong"){
       return (
-        <div className="wrongResult">
+        <div id="wrongResult" className="resultSec">
           <p>Oops, please try again!</p>
         </div>
       );
     }
     else{
-      return (<div className="none"></div>);
+      return (<div id="none"></div>);
     }
   }
 }

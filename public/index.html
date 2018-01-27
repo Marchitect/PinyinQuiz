@@ -40,10 +40,34 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      $('button').on('click', function(event) {
-        $( ".wrongResult" ).addClass('result');
-      });
-      
+    this.addEventListener("DOMContentLoaded", setupEvents, true);
+     
+    function setupEvents(e)
+    {
+      var quizButton = document.getElementsByTagName("button");
+
+      var resultSection = document.getElementsByClassName("resultSec");
+
+      var buttonNum = quizButton.length;
+
+      for (var i = 0; i < buttonNum; i += 1) {
+        quizButton[i].addEventListener('click', removeResultFunc, false);
+        console.log("the click listeners to perform removeResultFunc added");
+      }
+    
+    function removeResultFunc(e){
+      resultSection[0].setAttribute("style", "display:none");
+    }
+
+    var rBtn = document.getElementById("rBtn");
+    rBtn.addEventListener('click', putBackResultFunc, false);
+
+    function putBackResultFunc(e){
+      resultSection[0].setAttribute("style", "display:block!important;");
+      console.log(typeof(resultSection[0]));
+    }
+  }
+   
     </script>
   </body>
 </html>

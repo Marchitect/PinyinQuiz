@@ -14,9 +14,9 @@ class Quiz2AnswerOptions extends React.Component {
 
   render() {
     return (
-      <select
+      <select id="select" defaultValue="null"
           onChange={this.handleChange}>
-        <option value="null" disabled selected>Please select</option>
+        <option value="null" disabled>Please select</option>
   			<option value="wrong">xǐshǒu</option>
         <option value="correct">xǐzǎo</option>
   			<option value="wrong">xǐchē</option>

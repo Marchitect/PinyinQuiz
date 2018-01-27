@@ -14,9 +14,9 @@ class Quiz1AnswerOptions extends React.Component {
 
   render() {
     return (
-        <select
+        <select id="select" defaultValue="null"
           onChange={this.handleChange}>
-          	<option value="null" disabled selected>Please select</option>
+          	<option value="null" disabled>Please select</option>
   			<option value="wrong">kōngqì</option>
   			<option value="wrong">tàikōng</option>
   			<option value="correct">kōngjiān</option>

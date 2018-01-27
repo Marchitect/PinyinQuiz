@@ -17,7 +17,7 @@ class ClickMenuButtons extends React.Component {
       <div className="buttonGroup">
         <button className="quizBtn" value="kongjian" onClick={this.handleChange}>Quiz 1</button>
         <button className="quizBtn" value="xizao" onClick={this.handleChange}>2</button>
-        <button className="quizBtn" value="jiangyou" onClick={this.handleChange}>3</button>
+        <button className="quizBtn" value="jiang" onClick={this.handleChange}>3</button>
       </div>
     );
   }

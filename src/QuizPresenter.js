@@ -35,16 +35,18 @@ class QuizPresenter extends React.Component {
       quizPinyinContent = <div className="pinyin"><p>Wǒ yào qù <Quiz2AnswerOptions onChange={this.changeAnswer}/>.</p></div>
       result = <QuizResultPresenter answer={this.state.answer} />
     }
-    else if (quiz === "jiangyou"){
+    else if (quiz === "jiang"){
       quizEngContent = <div className="English"><p>Can you pass me the tomato sauce please?</p></div>
       quizPinyinContent = <div className="pinyin"><p>Qǐng dìgěi wǒ fānqié <Quiz3AnswerOptions onChange={this.changeAnswer}/>.</p></div>
       result = <QuizResultPresenter answer={this.state.answer} />
     }
     return (
       <div className="quizPresenter">
+      
         {quizEngContent}
         {quizPinyinContent}
         {result}
+
       </div>
     );
   }

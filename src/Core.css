@@ -1,11 +1,19 @@
 .quizPresenter{
-	border: 5px double #66CCFF;
+	border: 5px solid #66CCFF;
 	width: auto;
 	font-size: 1.5em;
 }
 .English{
 	background: #fff;
 	color: #000;
+}
+.English::after{
+	content: '';
+	background: #fff;
+	height: 1px;
+	display: block;
+	float: none;
+	width: 100%;
 }
 .English::before{
 	content: 'English Sentence:';
@@ -22,22 +30,22 @@
 	font-style: italic;
 	font-size: 0.8em;
 }
-.correctResult{
+#correctResult{
 	background: #99CC99;
 	border: 1px solid #99CCFF;
 	color: #028482;
 }
-.correctResult::before{
+#correctResult::before{
 	font-family: 'FontAwesome';
 	content: '\f058';
 	color: #028482;
 }
-.wrongResult{
+#wrongResult{
 	background: #EC799A;
 	border: 1px solid #EC799A;
 	color: #fff;
 }
-.wrongResult::before{
+#wrongResult::before{
 	font-family: 'FontAwesome';
 	content: '\f00d';
 	color: #fff;
@@ -45,6 +53,11 @@
 .fa{
 	font-size: 1em;
 }
-.result{
-	display: none;
+select{
+	background: #000 url(drop-down-select.png) center right no-repeat;
+	color: #fff;
+	border: 2px solid #000;
+	border-radius: 0;
+	-webkit-appearance: none;
+	padding: 2px 25px 2px 7px;
 }
