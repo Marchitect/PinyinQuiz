@@ -15,6 +15,7 @@ class PlaySoundButton extends React.Component {
   render() {
     return (
       <div className="soundButtonArea">
+        <button id="rBtn">Display Result</button>
         <button id="soundBtn" value="PLAYING" onClick={this.handleChange}>Hint: Play Audio</button>
       </div>
     );

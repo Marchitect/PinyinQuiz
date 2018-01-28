@@ -35,7 +35,6 @@ class Core extends React.Component{
 		<div>
 	        <ClickMenuButtons onClick={this.changeRenderedQuiz} />
 	        <PlaySoundButton onClick={this.changePlayStatus} />
-			<button id="rBtn">Display Result</button>
 	        <QuizPresenter quiz={this.state.quiz} />
 	        <SoundSystem quiz={this.state.quiz} playstatus={this.state.playstatus}/>
       	</div>
